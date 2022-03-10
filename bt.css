@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.same-p {
+  color: red;
+  background-color: blue;
+}
+#tittle {
+  color: blue;
+  font-size: 100px;
+}
+.parent .child {
+  color: green;
+}
+.parent > .child {
+  color: blue;
+  text-align: center;
+}
+a[href] {
+  color: saddlebrown;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+a:hover {
+  color: red;
+  opacity: 0.5;
+}
+input[type="button"] {
+  color: blue;
+}
+.parent * {
+  font-size: 50px;
+}
+a:focus {
+  color: aliceblue;
+}
+.same-p::after {
+  content: " hello ";
+}
+.same-p::before {
+  content: " hello ";
+}
+.list li:first-child {
+  color: aqua;
+}
+.list li:last-child {
+  color: aqua;
+}
+.list li:nth-child(2) {
+  color: aqua;
+}
+.letter::first-letter {
+  font-size: 20px;
+  color: aqua;
+}
+.letter::first-line {
+  color: red;
+}
+span {
+  background-color: red;
+  border: 1px solid;
+  border-radius: 20px;
+  box-shadow: 0 0 10px red;
+  margin: 20px 20px 20px 20px;
+  padding: 20px 20px;
+}
+.same-p {
+  width: 200px;
+  height: 200px;
+  min-width: 10px;
+  max-width: 150px;
+}
+.box-wrap {
+  width: 400px;
+  height: 400px;
+  border: 1px solid;
+  position: relative;
+}
+.box {
+  width: 60px;
+  height: 60px;
+  background-color: blue;
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  position: absolute;
+}
+
+.box1 {
+  left: 0;
+  top: 0;
+}
+
+.box2 {
+  right: 0;
+  top: 0;
+}
+
+.box3 {
+  left: 10;
+  bottom: 0;
+}
+
+.box4 {
+  right: 0;
+  bottom: 0;
+}
+
+.box5 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.inline {
+  display: inline-block;
+}
+.after:before {
+  content: "";
+  display: block;
+  background: url("https://3.bp.blogspot.com/-LHdLdAlA1E0/UyayLmE1XfI/AAAAAAAAETA/Jr90-IZUUvM/s1600/icon.png")
+    no-repeat;
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin: 0 6px 0 0;
+}
